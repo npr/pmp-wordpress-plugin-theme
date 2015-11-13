@@ -1,0 +1,81 @@
+.widget-area {
+    .wrap {
+        @include media('<=tablet'){
+            padding: 0;
+        }
+    }
+}
+
+.widget {
+	margin: 0 0 1.5em;
+	/* Make sure select elements fit in widgets. */
+	select {
+		max-width: 100%;
+	}
+
+    ul, ol {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+            margin-bottom: 8px;
+        }
+    }
+}
+
+/* Search Widget */
+
+.widget_search {
+    @include media('<tablet'){
+        padding-top: 1em;
+    }
+    form {
+        background-color: #fff;
+        border: 1px solid $color__border-input;
+        border-bottom-color: darken($color__border-input, 15%);
+        font-size: 0.9em;
+        padding: 3px 3px 3px 6px;
+        @include clearfix();
+        label {
+            float: left;
+        }
+        input[type="search"] {
+            border: 0;
+            font-size: 0.9em;
+            @include media('<=tablet'){
+                width: 75%;
+            }
+        }
+        input.search-submit{
+            float: right;
+        }
+    }
+}
+
+/* Underwriter Block */
+
+.widget {
+    &.custom_underwriter {
+        a {
+            border: none;
+        }
+    }
+}
+
+/* In Sidebars */
+
+.sidebar.widget-area {
+    .widget {
+        border: 1px solid darken($color__background-neutral, 15%);
+        padding: 15px 15px;
+        @include media('>=tablet'){
+            padding: 0 0 1em 0;
+            border: none;
+        }
+    }
+    input[type="search"] {
+        @include media('>=tablet'){
+            width: 100px;
+        }
+    }
+}

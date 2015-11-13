@@ -1,0 +1,329 @@
+/**
+ *	Main Navigation Menu For Site. Includes Responsive Configurations.
+ */
+
+.main-navigation {
+	clear: both;
+	display: block;
+	width: 100%;
+	font-size: 0.9em;
+    border-bottom: 1px solid darken($color__background-neutral, 15%);
+    background-color: $color__background-neutral;
+    @include clearfix();
+	.wrap {
+		padding: 0 5% 0 0;
+		@include clearfix();
+		@include media('>=tablet'){
+			padding: 0 2% 0 0;
+		}
+		/* contains compressed menu. */
+		&.wrap-sml {
+			text-align: right;
+			.wrap-buttons {
+				margin-top: 8px;
+				padding: 0 0 8px;
+			}
+		}
+		/* contains expanded menu */
+		&.wrap-lg {
+			padding: 0 0;
+			@include media('>=tablet'){
+				padding: 0 2% 0 0;
+			}
+		}
+	}
+	ul {
+		border-top: 1px solid darken($color__background-neutral, 15%);
+		display: none;
+		list-style: none;
+		margin: 0 0 0 0;
+		padding-left: 0;
+		text-transform: uppercase;
+		@include media('>=tablet'){
+			border-top: 0;
+		}
+		li {
+			&.menu-item-has-children {
+				position: relative;
+				/* Toggle that shows on Mobile Menu when an item has children */
+				&:after {
+					@include media('>=tablet'){
+						font-family: 'dashicons';
+						color: darken($color__background-neutral, 25%);
+						content: "\f140";
+						display: block;
+						position: absolute;
+						right: -12px;
+						top: 16px;
+					}
+				}
+				.sub-menu-toggle {
+					display: block;
+					position: absolute;
+					top: 11px;
+					right: 5%;
+					padding: 5px 6px 2px 5px;
+					@include media('>=tablet'){
+						display: none;
+					}
+					&:before {
+						font-size: 1em;
+						line-height: 1;
+					}
+					&:before {
+						font-family: 'dashicons';
+						content: "\f140";
+					}
+					&.activated:before {
+						font-family: 'dashicons';
+						content: "\f142";
+					}
+				}
+			}
+
+		}
+		ul {
+			display: none;
+			text-transform: capitalize;
+			opacity: 0;
+			@include media('>=tablet'){
+				background-color: $color__background-neutral;
+				border: 1px solid darken($color__background-neutral, 15%);
+				border-top: 0;
+				display: block;
+				float: left;
+				opacity: 1;
+				position: absolute;
+				margin-top: 0;
+				top: 48px;
+				left: -999em;
+				z-index: 99999;
+			}
+			ul {
+				@include media('>=tablet'){
+					left: -999em;
+					top: 0;
+				}
+
+			}
+
+			li {
+				&:hover > ul,
+				&.focus > ul {
+					@include media('>=tablet'){
+						left: 100%;
+					}
+				}
+			}
+
+			a {
+				width: 100%;
+				border: none;
+				@include media('>=tablet'){
+					width: 200px;
+					padding: 6px 5%;
+				}
+			}
+
+			:hover > a,
+			.focus > a {
+			}
+
+			a:hover,
+			a.focus {
+			}
+		}
+
+		li:hover > ul,
+		li.focus > ul {
+			left: auto;
+		}
+	}
+	li {
+		border-bottom: 1px solid darken($color__background-neutral, 15%);
+		margin-bottom: 0;
+		&:last-child {
+			border-bottom: 0;
+		}
+		@include media('>=tablet'){
+			border: 0;
+			float: left;
+			margin-left: 1.2em;
+			position: relative;
+		}
+		&:hover > a,
+		&.focus > a {
+		}
+		li {
+			margin-left: 0;
+		}
+	}
+	a {
+		/* Color is set in Wordpress Theme */
+		display: block;
+		text-decoration: none;
+		padding: 12px 5%;
+		border: 0;
+		&:hover {
+            /* Color is set in Wordpress Theme. It uses the Font Color. */
+		}
+		@include media('>=tablet'){
+			padding: 16px 0 12px 0;
+            border-bottom: 6px solid $color__background-neutral;
+            &:hover {
+                border-bottom-color: darken($color__background-neutral, 15%);
+            }
+    	}
+	}
+
+	.current_page_item > a,
+	.current-menu-item > a,
+	.current_page_ancestor > a,
+	.current_page_parent > a {
+		/* Color is set in Wordpress Theme */
+		@include media('>=tablet'){
+			padding: 16px 0 12px 0;
+            border-bottom: 6px solid darken($color__background-neutral, 15%);
+            &:hover {
+                border-bottom-color: darken($color__background-neutral, 15%);
+            }
+    	}
+	}
+
+	/* Turn off Border and Fix Padding on Sub-Menu item */
+	.current_page_parent ul a {
+		@include media('>=tablet'){
+			border: 0;
+			padding: 6px 5%;
+		}
+	}
+}
+
+/* Toggles Used on Mobile Menu */
+
+.menu-toggle,
+.search-toggle {
+	display: inline-block;
+}
+.menu-toggle:before {
+	font-family: 'dashicons';
+	content: "\f333";
+}
+.search-toggle:before {
+	font-family: 'dashicons';
+	content: "\f179";
+}
+
+/* Need to Hide one of the Stations at the Mobile Size */
+
+.wrap-lg {
+	.site-station {
+		display: none;
+		@include media('>=tablet') {
+			display: block;
+		}
+	}
+}
+
+/* Search */
+
+.nav-aside .widget_search {
+	display: none;
+	margin: 0;
+}
+
+@include media('>=tablet') {
+	.wrap-sml {
+		display: none;
+	}
+	.main-navigation ul,
+	.nav-aside .widget_search {
+		display: block;
+		margin-top: 0;
+	}
+}
+
+/**
+ *	Sub Navigation Menus, Found on Posts and Comments
+ */
+
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+	font-weight: 700;
+	font-family: $font--secondary;
+	.site-main & {
+		margin: 0 0 1.5em;
+		overflow: hidden;
+	}
+	& .nav-previous {
+		text-align: center;
+		margin-bottom: 1em;
+		@include media('>=tablet'){
+			text-align: left;
+			float: left;
+			width: 40%;
+		}
+	}
+	& .nav-next {
+		text-align: center;
+		@include media('>=tablet'){
+			float: right;
+			text-align: right;
+			width: 40%;
+		}
+	}
+}
+.post-navigation {
+	.nav-previous {
+		&:before {
+			content: 'Previous';
+		}
+	}
+
+	.nav-next {
+		&:before {
+			content: 'Next';
+		}
+	}
+	.nav-next,
+	.nav-previous {
+		&:before {
+			font-family: $font--main;
+			font-weight: 400;
+			@include font-size(1);
+			text-transform: uppercase;
+			display: block;
+		}
+		a {
+	        color: #fff;
+	        border-color: rgba(255,255,255, 0.25);
+	        &:hover, &:focus {
+	            color: rgba(255,255,255,0.8);
+	            border-color: rgba(255,255,255, 0);
+	        }
+	    }
+	}
+}
+
+
+/*
+ # Secondary Navigation - Found in Footer
+ */
+
+.site-footer .menu,
+.site-footer .menu-secondary-menu-container {
+	ul {
+		margin: 0 0 0.5em;
+		padding: 0;
+		list-style: none;
+		li {
+			display: inline-block;
+			margin: 0 0.5em;
+			text-transform: uppercase;
+			a {
+				border: none;
+			}
+		}
+	}
+}

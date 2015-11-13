@@ -1,0 +1,122 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	box-sizing: inherit;
+}
+
+body {
+	background: $color__primary-accent; /* Fallback for when there is no custom background color defined. */
+}
+
+blockquote, q {
+	quotes: "" "";
+
+	&:before,
+	&:after {
+		content: "";
+	}
+}
+
+figure {
+	margin: 0;
+	padding: 0;
+	figcaption {
+		@include font-size(0.9);
+		font-style: italic;
+		text-align: left;
+	}
+}
+
+hr {
+	background-color: $color__background-hr;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}
+
+@import "lists";
+
+img {
+	height: auto; /* Make sure images are scaled correctly. */
+	max-width: 100%; /* Adhere to container width. */
+}
+
+@import "tables";
+
+/*	Social Sharing
+--------------------------------------------- */
+.social-sharing {
+	li {
+		display: inline-block;
+		a {
+			display: block;
+			border: none;
+			border-radius: $border__radius-base;
+			height: 30px;
+			width: 30px;
+			text-align: center;
+			line-height: 2;
+			color: #fff;
+			&:hover, &:focus {
+				opacity: 0.75;
+			}
+		}
+		&#service-facebook {
+			a {
+				background-color: #3B5998;
+			}
+		}
+		&#service-google-plus {
+			a {
+				background-color: #d34836;
+			}
+		}
+		&#service-linkedin {
+			a {
+				background-color: #0077b5;
+			}
+		}
+		&#service-twitter {
+			a {
+				background-color: #55acee;
+			}
+		}
+
+	}
+}
+
+
+/* 	ZZZ. WP Admin Features
+--------------------------------------------- */
+
+/* Move Edit Link */
+
+.post-edit-link {
+	display: inline-block;
+	color: white;
+	background-color: $color__link;
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+	padding: 15px 10px 5px;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 14px;
+	position: fixed;
+	top: 200px;
+	left: -12px;
+	z-index: 10000;
+	font-weight: normal;
+	@include transform(rotate(-90deg));
+	border: 0;
+	&:visited {
+		color: white;
+	}
+	&:hover {
+		color: white;
+		background-color: lighten($color__link, 10%);
+	}
+}

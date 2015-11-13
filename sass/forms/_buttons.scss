@@ -1,0 +1,37 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	border: none;
+	border-radius: 7px;
+	background: $color__link;
+	color: rgba(0, 0, 0, .8);
+	line-height: 1;
+	text-transform: uppercase;
+	color: #fff;
+	padding: 1em 1.2em;
+	position: relative;
+	@include font-size(1);
+	&:hover {
+		background: $color__link-hover;
+	}
+	&:active,
+	&:focus {
+		background: $color__link-hover;
+		top: 2px;
+	}
+}
+
+/* Small Buttons */
+
+button.menu-toggle,
+button.search-toggle,
+input.search-submit[type="submit"] {
+	@include font-size(0.75);
+	padding: .6em 1em .5em;
+}
+
+button.menu-toggle,
+button.search-toggle {
+	margin-left: 0.25em;
+}

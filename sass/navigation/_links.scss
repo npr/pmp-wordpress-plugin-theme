@@ -1,0 +1,51 @@
+/* Colors for links are set by the Wordpress Theme Preferences. */
+
+a {
+	color: $color__link;
+	border-bottom: 5px solid $color__background-neutral;
+	text-decoration: none;
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $color__text-screen;
+        border-bottom-color: transparent;
+	}
+	&:focus {
+		outline: 0;
+	}
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}
+
+h1,
+.site-branding,
+.wp-audio-shortcode  {
+	a {
+		border: 0;
+	}
+}
+
+#primary-tertiary-wrap {
+	a {
+		border-bottom-color: darken($color__background-neutral, 10%);
+	}
+}
+
+/*--------------------------------------------------------------
+## Site Footer
+--------------------------------------------------------------*/
+
+#sub-footer-wrap,
+.site-footer {
+	a {
+        color: #fff;
+        border-color: rgba(255,255,255, 0.25);
+        &:hover, &:focus {
+            color: rgba(255,255,255,0.8);
+            border-color: rgba(255,255,255, 0);
+        }
+    }
+}

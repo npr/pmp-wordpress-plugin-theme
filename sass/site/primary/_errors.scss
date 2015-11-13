@@ -1,0 +1,21 @@
+/*
+ # 404 Page
+ */
+
+ .error404 {
+    .error-404 {
+        .search-form {
+            border: 1px solid $color__neutral-dark;
+            padding: 15px;
+            margin-bottom: 2em;
+            input[type="search"] {
+                border: 0;
+                width: 75%;
+            }
+            input.search-submit {
+                float: right;
+                margin-top: 4px;
+            }
+        }
+    }
+ }
