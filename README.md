@@ -88,7 +88,7 @@ It is meant to be used with the Public Media Platform Wordpress plugin.
 
 ## Install PMP Megaphone Theme
 
-* Download the zip file from….
+* Download the zip file: [https://github.com/publicmediaplatform/pmp-megaphone/archive/master.zip](https://github.com/publicmediaplatform/pmp-megaphone/archive/master.zip)
 
 * Go to Appearance > Themes
 
