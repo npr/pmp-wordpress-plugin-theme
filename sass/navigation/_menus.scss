@@ -45,7 +45,9 @@
 		li {
 			&.menu-item-has-children {
 				position: relative;
-				/* Toggle that shows on Mobile Menu when an item has children */
+				@include media('>=tablet'){
+					margin-right: 0.4em;
+				}
 				&:after {
 					@include media('>=tablet'){
 						font-family: 'dashicons';

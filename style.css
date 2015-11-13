@@ -992,10 +992,15 @@ h1 a,
 /* line 46, sass/navigation/_menus.scss */
 .main-navigation ul li.menu-item-has-children {
   position: relative;
-  /* Toggle that shows on Mobile Menu when an item has children */
 }
 @media (min-width: 48em) {
-  /* line 49, sass/navigation/_menus.scss */
+  /* line 46, sass/navigation/_menus.scss */
+  .main-navigation ul li.menu-item-has-children {
+    margin-right: 0.4em;
+  }
+}
+@media (min-width: 48em) {
+  /* line 51, sass/navigation/_menus.scss */
   .main-navigation ul li.menu-item-has-children:after {
     font-family: 'dashicons';
     color: #adadad;
@@ -1006,7 +1011,7 @@ h1 a,
     top: 16px;
   }
 }
-/* line 60, sass/navigation/_menus.scss */
+/* line 62, sass/navigation/_menus.scss */
 .main-navigation ul li.menu-item-has-children .sub-menu-toggle {
   display: block;
   position: absolute;
@@ -1015,34 +1020,34 @@ h1 a,
   padding: 5px 6px 2px 5px;
 }
 @media (min-width: 48em) {
-  /* line 60, sass/navigation/_menus.scss */
+  /* line 62, sass/navigation/_menus.scss */
   .main-navigation ul li.menu-item-has-children .sub-menu-toggle {
     display: none;
   }
 }
-/* line 69, sass/navigation/_menus.scss */
+/* line 71, sass/navigation/_menus.scss */
 .main-navigation ul li.menu-item-has-children .sub-menu-toggle:before {
   font-size: 1em;
   line-height: 1;
 }
-/* line 73, sass/navigation/_menus.scss */
+/* line 75, sass/navigation/_menus.scss */
 .main-navigation ul li.menu-item-has-children .sub-menu-toggle:before {
   font-family: 'dashicons';
   content: "\f140";
 }
-/* line 77, sass/navigation/_menus.scss */
+/* line 79, sass/navigation/_menus.scss */
 .main-navigation ul li.menu-item-has-children .sub-menu-toggle.activated:before {
   font-family: 'dashicons';
   content: "\f142";
 }
-/* line 85, sass/navigation/_menus.scss */
+/* line 87, sass/navigation/_menus.scss */
 .main-navigation ul ul {
   display: none;
   text-transform: capitalize;
   opacity: 0;
 }
 @media (min-width: 48em) {
-  /* line 85, sass/navigation/_menus.scss */
+  /* line 87, sass/navigation/_menus.scss */
   .main-navigation ul ul {
     background-color: #EDEDED;
     border: 1px solid #c7c7c7;
@@ -1058,46 +1063,46 @@ h1 a,
   }
 }
 @media (min-width: 48em) {
-  /* line 102, sass/navigation/_menus.scss */
+  /* line 104, sass/navigation/_menus.scss */
   .main-navigation ul ul ul {
     left: -999em;
     top: 0;
   }
 }
 @media (min-width: 48em) {
-  /* line 111, sass/navigation/_menus.scss */
+  /* line 113, sass/navigation/_menus.scss */
   .main-navigation ul ul li:hover > ul, .main-navigation ul ul li.focus > ul {
     left: 100%;
   }
 }
-/* line 119, sass/navigation/_menus.scss */
+/* line 121, sass/navigation/_menus.scss */
 .main-navigation ul ul a {
   width: 100%;
   border: none;
 }
 @media (min-width: 48em) {
-  /* line 119, sass/navigation/_menus.scss */
+  /* line 121, sass/navigation/_menus.scss */
   .main-navigation ul ul a {
     width: 200px;
     padding: 6px 5%;
   }
 }
-/* line 137, sass/navigation/_menus.scss */
+/* line 139, sass/navigation/_menus.scss */
 .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
   left: auto;
 }
-/* line 142, sass/navigation/_menus.scss */
+/* line 144, sass/navigation/_menus.scss */
 .main-navigation li {
   border-bottom: 1px solid #c7c7c7;
   margin-bottom: 0;
 }
-/* line 145, sass/navigation/_menus.scss */
+/* line 147, sass/navigation/_menus.scss */
 .main-navigation li:last-child {
   border-bottom: 0;
 }
 @media (min-width: 48em) {
-  /* line 142, sass/navigation/_menus.scss */
+  /* line 144, sass/navigation/_menus.scss */
   .main-navigation li {
     border: 0;
     float: left;
@@ -1105,11 +1110,11 @@ h1 a,
     position: relative;
   }
 }
-/* line 157, sass/navigation/_menus.scss */
+/* line 159, sass/navigation/_menus.scss */
 .main-navigation li li {
   margin-left: 0;
 }
-/* line 161, sass/navigation/_menus.scss */
+/* line 163, sass/navigation/_menus.scss */
 .main-navigation a {
   /* Color is set in Wordpress Theme */
   display: block;
@@ -1117,22 +1122,22 @@ h1 a,
   padding: 12px 5%;
   border: 0;
 }
-/* line 167, sass/navigation/_menus.scss */
+/* line 169, sass/navigation/_menus.scss */
 .main-navigation a:hover {
   /* Color is set in Wordpress Theme. It uses the Font Color. */
 }
 @media (min-width: 48em) {
-  /* line 161, sass/navigation/_menus.scss */
+  /* line 163, sass/navigation/_menus.scss */
   .main-navigation a {
     padding: 16px 0 12px 0;
     border-bottom: 6px solid #EDEDED;
   }
-  /* line 173, sass/navigation/_menus.scss */
+  /* line 175, sass/navigation/_menus.scss */
   .main-navigation a:hover {
     border-bottom-color: #c7c7c7;
   }
 }
-/* line 179, sass/navigation/_menus.scss */
+/* line 181, sass/navigation/_menus.scss */
 .main-navigation .current_page_item > a,
 .main-navigation .current-menu-item > a,
 .main-navigation .current_page_ancestor > a,
@@ -1140,7 +1145,7 @@ h1 a,
   /* Color is set in Wordpress Theme */
 }
 @media (min-width: 48em) {
-  /* line 179, sass/navigation/_menus.scss */
+  /* line 181, sass/navigation/_menus.scss */
   .main-navigation .current_page_item > a,
   .main-navigation .current-menu-item > a,
   .main-navigation .current_page_ancestor > a,
@@ -1148,7 +1153,7 @@ h1 a,
     padding: 16px 0 12px 0;
     border-bottom: 6px solid #c7c7c7;
   }
-  /* line 187, sass/navigation/_menus.scss */
+  /* line 189, sass/navigation/_menus.scss */
   .main-navigation .current_page_item > a:hover,
   .main-navigation .current-menu-item > a:hover,
   .main-navigation .current_page_ancestor > a:hover,
@@ -1157,7 +1162,7 @@ h1 a,
   }
 }
 @media (min-width: 48em) {
-  /* line 194, sass/navigation/_menus.scss */
+  /* line 196, sass/navigation/_menus.scss */
   .main-navigation .current_page_parent ul a {
     border: 0;
     padding: 6px 5%;
@@ -1165,50 +1170,50 @@ h1 a,
 }
 
 /* Toggles Used on Mobile Menu */
-/* line 204, sass/navigation/_menus.scss */
+/* line 206, sass/navigation/_menus.scss */
 .menu-toggle,
 .search-toggle {
   display: inline-block;
 }
 
-/* line 208, sass/navigation/_menus.scss */
+/* line 210, sass/navigation/_menus.scss */
 .menu-toggle:before {
   font-family: 'dashicons';
   content: "\f333";
 }
 
-/* line 212, sass/navigation/_menus.scss */
+/* line 214, sass/navigation/_menus.scss */
 .search-toggle:before {
   font-family: 'dashicons';
   content: "\f179";
 }
 
 /* Need to Hide one of the Stations at the Mobile Size */
-/* line 220, sass/navigation/_menus.scss */
+/* line 222, sass/navigation/_menus.scss */
 .wrap-lg .site-station {
   display: none;
 }
 @media (min-width: 48em) {
-  /* line 220, sass/navigation/_menus.scss */
+  /* line 222, sass/navigation/_menus.scss */
   .wrap-lg .site-station {
     display: block;
   }
 }
 
 /* Search */
-/* line 230, sass/navigation/_menus.scss */
+/* line 232, sass/navigation/_menus.scss */
 .nav-aside .widget_search {
   display: none;
   margin: 0;
 }
 
 @media (min-width: 48em) {
-  /* line 236, sass/navigation/_menus.scss */
+  /* line 238, sass/navigation/_menus.scss */
   .wrap-sml {
     display: none;
   }
 
-  /* line 239, sass/navigation/_menus.scss */
+  /* line 241, sass/navigation/_menus.scss */
   .main-navigation ul,
   .nav-aside .widget_search {
     display: block;
@@ -1218,21 +1223,21 @@ h1 a,
 /**
  *	Sub Navigation Menus, Found on Posts and Comments
  */
-/* line 250, sass/navigation/_menus.scss */
+/* line 252, sass/navigation/_menus.scss */
 .comment-navigation,
 .posts-navigation,
 .post-navigation {
   font-weight: 700;
   font-family: "PT Serif", "Times New Roman", serif;
 }
-/* line 255, sass/navigation/_menus.scss */
+/* line 257, sass/navigation/_menus.scss */
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
   margin: 0 0 1.5em;
   overflow: hidden;
 }
-/* line 259, sass/navigation/_menus.scss */
+/* line 261, sass/navigation/_menus.scss */
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
@@ -1240,7 +1245,7 @@ h1 a,
   margin-bottom: 1em;
 }
 @media (min-width: 48em) {
-  /* line 259, sass/navigation/_menus.scss */
+  /* line 261, sass/navigation/_menus.scss */
   .comment-navigation .nav-previous,
   .posts-navigation .nav-previous,
   .post-navigation .nav-previous {
@@ -1249,14 +1254,14 @@ h1 a,
     width: 40%;
   }
 }
-/* line 268, sass/navigation/_menus.scss */
+/* line 270, sass/navigation/_menus.scss */
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
   text-align: center;
 }
 @media (min-width: 48em) {
-  /* line 268, sass/navigation/_menus.scss */
+  /* line 270, sass/navigation/_menus.scss */
   .comment-navigation .nav-next,
   .posts-navigation .nav-next,
   .post-navigation .nav-next {
@@ -1266,15 +1271,15 @@ h1 a,
   }
 }
 
-/* line 279, sass/navigation/_menus.scss */
+/* line 281, sass/navigation/_menus.scss */
 .post-navigation .nav-previous:before {
   content: 'Previous';
 }
-/* line 285, sass/navigation/_menus.scss */
+/* line 287, sass/navigation/_menus.scss */
 .post-navigation .nav-next:before {
   content: 'Next';
 }
-/* line 291, sass/navigation/_menus.scss */
+/* line 293, sass/navigation/_menus.scss */
 .post-navigation .nav-next:before,
 .post-navigation .nav-previous:before {
   font-family: "Lato", Arial, sans-serif;
@@ -1284,13 +1289,13 @@ h1 a,
   text-transform: uppercase;
   display: block;
 }
-/* line 298, sass/navigation/_menus.scss */
+/* line 300, sass/navigation/_menus.scss */
 .post-navigation .nav-next a,
 .post-navigation .nav-previous a {
   color: #fff;
   border-color: rgba(255, 255, 255, 0.25);
 }
-/* line 301, sass/navigation/_menus.scss */
+/* line 303, sass/navigation/_menus.scss */
 .post-navigation .nav-next a:hover, .post-navigation .nav-next a:focus,
 .post-navigation .nav-previous a:hover,
 .post-navigation .nav-previous a:focus {
@@ -1301,21 +1306,21 @@ h1 a,
 /*
  # Secondary Navigation - Found in Footer
  */
-/* line 316, sass/navigation/_menus.scss */
+/* line 318, sass/navigation/_menus.scss */
 .site-footer .menu ul,
 .site-footer .menu-secondary-menu-container ul {
   margin: 0 0 0.5em;
   padding: 0;
   list-style: none;
 }
-/* line 320, sass/navigation/_menus.scss */
+/* line 322, sass/navigation/_menus.scss */
 .site-footer .menu ul li,
 .site-footer .menu-secondary-menu-container ul li {
   display: inline-block;
   margin: 0 0.5em;
   text-transform: uppercase;
 }
-/* line 324, sass/navigation/_menus.scss */
+/* line 326, sass/navigation/_menus.scss */
 .site-footer .menu ul li a,
 .site-footer .menu-secondary-menu-container ul li a {
   border: none;
