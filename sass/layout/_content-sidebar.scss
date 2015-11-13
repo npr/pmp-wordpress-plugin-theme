@@ -3,7 +3,7 @@
 .parent-wrap {
     max-width: 100%;
     @include clearfix();
-    padding: 1em 0;
+    padding: 1.5em 0;
     @include media('>=tablet'){
         padding: 2.5em 0 2em;
     }

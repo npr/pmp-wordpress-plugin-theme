@@ -203,7 +203,7 @@
         @include after-line(50px, $color__neutral-dark);
         margin-bottom: 1.5em;
         .entry-title {
-            @include font-size(2.5);
+            @include font-size(2);
             @include media('>=tablet'){
                 @include font-size(3);
             }
