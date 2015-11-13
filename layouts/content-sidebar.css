@@ -1,0 +1,23 @@
+/*
+Theme Name: PMP Megaphone
+Layout: Content-Sidebar
+*/
+
+.content-area {
+	float: left;
+	margin: 0 0 0 0;
+	width: 75%;
+}
+.site-main {
+	margin: 0;
+}
+.site-content .widget-area {
+	float: right;
+	overflow: hidden;
+	width: 25%;
+}
+.site-footer {
+	clear: both;
+	width: 100%;
+}
+

@@ -1,0 +1,33 @@
+.blog .format-aside .entry-title,
+.archive .format-aside .entry-title {
+	display: none;
+}
+.sidebar h2:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+
+/* Content with Right Sidebar - Sidebar contains Ad */
+
+.content-sidebar-with-ad {
+    .center-block-wrap {
+        position: relative;
+    }
+    #primary {
+        word-wrap: break-word;
+        @include media('>=tablet'){
+            margin: 0 (-$size__site-sidebar_with_ad) 0 0;
+            padding: 0 ($size__site-sidebar_with_ad + 25px) 0 0;
+            overflow: hidden;
+        }
+        width: 100%;
+    }
+    #primary-sidebar {
+        margin: 0;
+        @include media('>=tablet'){
+            width: $size__site-sidebar_with_ad;
+            right: 0;
+        }
+    }
+}

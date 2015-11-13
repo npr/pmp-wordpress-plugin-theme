@@ -1,0 +1,70 @@
+/* General Wraps */
+
+.parent-wrap {
+    max-width: 100%;
+    @include clearfix();
+    padding: 1em 0;
+    @include media('>=tablet'){
+        padding: 2.5em 0 2em;
+    }
+}
+
+.center-block-wrap {
+    @include center-block;
+    @include clearfix();
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+.wrap {
+    padding: 0 5%;
+}
+
+.site-header {
+    @include clearfix();
+}
+
+.content-area {
+}
+
+.site-main {
+	margin: 0;
+}
+
+.site-content {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.site-footer {
+	clear: both;
+	width: $size__site-main;
+    text-align: center;
+}
+
+
+/* Content with Right Sidebar - Sidebar contains Ad */
+
+.content-sidebar-with-ad {
+    .center-block-wrap {
+        position: relative;
+    }
+    #primary {
+        word-wrap: break-word;
+        @include media('>=tablet'){
+            margin: 0 (-$size__site-sidebar_with_ad) 0 0;
+            padding: 0 ($size__site-sidebar_with_ad + 25px) 0 0;
+            overflow: hidden;
+        }
+        width: 100%;
+    }
+    #primary-sidebar,
+    #archive-sidebar {
+        margin: 0;
+        @include media('>=tablet'){
+            width: $size__site-sidebar_with_ad;
+            right: 0;
+        }
+    }
+}

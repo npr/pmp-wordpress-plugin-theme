@@ -1,0 +1,52 @@
+.comment-content a {
+	word-wrap: break-word;
+}
+.bypostauthor {
+	display: block;
+}
+
+.comments-area {
+    padding-bottom: 1em;
+    @include media('>=tablet'){
+        padding-bottom: 0;
+    }
+}
+
+.comment-list {
+    .depth-1 {
+        background-color: lighten($color__background-neutral, 3%);
+        margin-bottom: 1.5em;
+        padding: 1.5em 1.5em 0;
+        > ol {
+            padding-top: 1.25em;
+            margin-left: 0;
+            border-top: 1px solid darken($color__background-neutral, 15%);
+        }
+    }
+    article {
+        padding-bottom: 1.5em;
+    }
+}
+
+.comment-form {
+    label {
+        display: block;
+    }
+    input {
+        @include media('<=phone'){
+            width: 100%;
+        }
+    }
+}
+
+h3#reply-title {
+    font-size: 1.5em;
+    margin-bottom: 0.67em;
+    margin-top: 0;
+    @include after-line(50px, $color__neutral-dark);
+}
+
+.comment-awaiting-moderation {
+    font-style: italic;
+    font-weight: 900;
+}
