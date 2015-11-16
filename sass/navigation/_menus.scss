@@ -87,14 +87,12 @@
 		ul {
 			display: none;
 			text-transform: capitalize;
-			opacity: 0;
 			@include media('>=tablet'){
 				background-color: $color__background-neutral;
 				border: 1px solid darken($color__background-neutral, 15%);
 				border-top: 0;
 				display: block;
 				float: left;
-				opacity: 1;
 				position: absolute;
 				margin-top: 0;
 				top: 48px;
