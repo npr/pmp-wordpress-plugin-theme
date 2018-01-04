@@ -86,11 +86,11 @@ You can see a sample of the theme, using veteran-related content from around the
 
 * Activate the plugin.
 
-* Follow instructions found here to set up the plugin: [https://github.com/publicmediaplatform/pmp-wordpress#settings](https://github.com/publicmediaplatform/pmp-wordpress#settings)
+* Follow instructions found here to set up the plugin: [https://github.com/npr/pmp-wordpress-plugin#settings](https://github.com/npr/pmp-wordpress-plugin#settings)
 
 ## Install PMP Megaphone Theme
 
-* Download the zip file: [https://github.com/publicmediaplatform/pmp-megaphone/archive/master.zip](https://github.com/publicmediaplatform/pmp-megaphone/archive/master.zip)
+* Download the zip file: [https://github.com/npr/pmp-wordpress-plugin-theme/archive/master.zip](https://github.com/npr/pmp-wordpress-plugin-theme/archive/master.zip)
 
 * Go to Appearance > Themes
 
@@ -342,7 +342,7 @@ It is best to identify primary categories of content before setting up the websi
 
 3. You can now tag and categorize the post as you see fit.
 
-There are many ways to categorize and pull in content from the PMP. Learn more about the plugin at [https://github.com/publicmediaplatform/pmp-wordpress](https://github.com/publicmediaplatform/pmp-wordpress).
+There are many ways to categorize and pull in content from the PMP. Learn more about the plugin at [https://github.com/npr/pmp-wordpress-plugin](https://github.com/npr/pmp-wordpress-plugin).
 
 ## Set up Homepage
 
