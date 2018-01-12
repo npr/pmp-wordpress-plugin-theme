@@ -8,8 +8,6 @@ The PMP Megaphone WordPress theme provides a digital megaphone for you to provid
 
 It is meant to be used with the Public Media Platform Wordpress plugin.
 
-You can see a sample of the theme, using veteran-related content from around the country at [megaphone.publicmediaplatform.org](http://megaphone.publicmediaplatform.org).
-
 **Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
 
 - [Installation](#installation)
