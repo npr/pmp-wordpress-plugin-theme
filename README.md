@@ -1,8 +1,6 @@
-# PMP Megaphone
+# PMP is shut down as of July 2021 - this plugin theme is no longer maintained!
 
-Wordpress theme for showcasing your content along side of PMP content.
-
-![megaphone man](https://upload.wikimedia.org/wikipedia/commons/8/8b/Thomas_H_Ince_-_Megaphone_1922.jpg)
+**PMP is shut down as of July 2021 - this plugin theme is no longer maintained!**
 
 The PMP Megaphone WordPress theme provides a digital megaphone for you to provide journalistic coverage over a specific topic. This theme was a collaboration between the [Public Media Platform](http://publicmediaplatform.org) and [Rocketkoi](http://www.rocketkoi.com) and is provided *as is* under the MIT License.
 
